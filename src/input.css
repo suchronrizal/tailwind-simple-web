@@ -1,0 +1,20 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+
+.navbar-fixed {
+  @apply fixed z-[9999] bg-white bg-opacity-75 backdrop-blur-md shadow-sm;
+}
+
+.default-hamburger > span:nth-child(2){
+  @apply hidden
+}
+
+.hamburger-active > span:nth-child(1){
+  @apply hidden transition duration-200 ease-in-out
+}
+
+.hamburger-active > span:nth-child(2){
+  @apply block transition duration-200 ease-in-out;
+}
